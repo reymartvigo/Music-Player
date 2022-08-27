@@ -25,6 +25,7 @@ body{
     background: rgb(213, 218, 218);
     box-shadow:  inset 0 0 60px #1a1919;
     color: #000;     
+   
 }
 .image {
     margin: 35px;
@@ -34,6 +35,7 @@ body{
     clip-path: circle(35%);
     align-self: center;
     padding-top: 10px;
+   
 }
 
  h1{
@@ -140,4 +142,28 @@ button:hover{
     }
 }
 
-
+@media only screen and (max-width: 415px) {
+    .container-fluid{
+     margin-left:30px;
+     margin-top: 120px;
+     width: 350px;
+     align-items: center;
+    }
+    #volume_show{
+        margin-right: 10px;
+    }
+    .volume{
+        justify-content: center;
+        display: inline-flex;
+        margin-left: 90px; 
+    }
+    button{
+        margin-left: 15px;
+    }
+    #pre{
+        margin-left: 110px;
+    }
+    .auto-play , .duration{
+        margin-left: 120px;
+}
+}
