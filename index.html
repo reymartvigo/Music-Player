@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial=1.0">
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Nanum+Gothic:wght@700;800&family=Roboto+Slab:wght@100;400;500&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer> </script>
+
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="image">
+            <img class="track-image" src="image/image1.jpg" width="300px" height="280px;">
+        </div>
+
+        <h1 id="title">Song Title</h1>
+        <h3 id="singer">Singer</h3>
+
+        <div class="volume">
+            <p id="volume_show">90</p>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+        </div>
+
+
+        <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+        <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+        <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+
+        <div class="auto-play">
+            <button id="auto" onclick="autoplay_switch()">
+                <h4>Auto Play</h4><i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="duration">
+            <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+
+    </div>
+</body>
+
+
+</html>

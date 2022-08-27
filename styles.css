@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(17, 20, 22);
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container-fluid{
+    display: inline-block;
+    position: fixed;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 35%;
+    border-radius: 15px;
+    border: none;
+    width: 400px;
+    height: 600px;
+    background: rgb(213, 218, 218);
+    box-shadow:  inset 0 0 60px #1a1919;
+    color: #000;     
+}
+.image {
+    margin: 35px;
+    margin-top: 3%;
+    margin-bottom: 0.5%;
+    padding-left: 6.5px;
+    clip-path: circle(35%);
+    align-self: center;
+    padding-top: 10px;
+}
+
+ h1{
+    font: 40px;
+    margin: 2%;
+    margin-top: 1px;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 12px;  
+}
+
+button{
+    font-size: 20px;
+    width: 35px;
+    background: none;
+    border-style: none;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    margin-right: 3px;
+    margin-left: 15px;
+    margin-bottom:1px;
+}
+
+.fa-volume-up{
+    margin-right: 5px;
+    margin-top : 2px;
+}
+
+button:hover{
+    cursor:pointer;
+}
+#pre{
+    margin-left: 135px;
+}
+
+.auto-play{
+    display: inline-flex;
+    margin-left: 145px;
+    width: 105px; 
+    height: 50px; 
+    margin-top: 5px;
+    margin-bottom: 1px;
+ 
+}
+
+#auto{
+    font-size: 15px;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 10px; 
+    margin-left: 3px;
+    width: 130px; 
+    display: inline-flex;
+    height: 25px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 10px;;
+}
+
+.fa-circle-o-notch{
+    margin-left: 8px;
+    margin-top: 1px;
+    
+}
+
+.duration{
+    margin-left: 150px;  
+}
+
+.volume{
+    justify-content: center;
+    display: inline-flex;
+    margin-left: 125px;
+    
+}
+
+#volume_show{
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+   .container-fluid{
+    margin-left:160px;
+    margin-top: 30px;
+   }
+  }
+
+@media only screen and (max-width: 600px) {
+    .container-fluid{
+     margin-left:60px;
+     margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .container-fluid{
+     margin-left:160px;
+     margin-top: 30px;
+    }
+}
+
+
